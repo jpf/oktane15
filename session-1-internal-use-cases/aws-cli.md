@@ -1,9 +1,22 @@
 # Introduction
 
-In this guide, you will learn how to configure your Okta org with
-Single Sign-On access to Amazon Web Services ("AWS"), once you've
-done that, you will learn how to use an AWS CLI tool which will
-allow you to authenticate the AWS CLI tools against Okta with MFA.
+A key challenge for companies today is to find an easy,
+consolidated, and secure way to manage access to their
+resources. The team at Okta has come up with an innovative solution
+to this problem. Okta customers can effortlessly connect their
+current on-premises directories to a variety of applications in
+their easy-to-use online service. AWS is one of these services, and
+with a few easy steps, you can have your AWS users connecting the
+AWS console through the Okta portal. This will work great for
+console access, but what if you want to use the AWS CLI or
+programmatically call AWS APIs.
+
+This AWS CLI example can be used on an end user desktop to provide
+CLI authorization by requesting for a temporary AWS token using Okta
+credentials.  If the Okta org is configured with Active Directory or
+LDAP, then end users can effectively be granted access to AWS IAM
+using their corporate credentials.  This lab will walk you through
+the setup process – and also do a code walkthrough of the module.
 
 # Make sure that you have an Amazon Web Services account
 

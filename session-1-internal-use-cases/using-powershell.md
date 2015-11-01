@@ -1,9 +1,14 @@
 # Powershell
 
-In this section we will learn about using Okta’s PowerShell SDK to
-manage users from Windows PowerShell. Using what you learn in this
-session, you will be able to create PowerShell Scripts to help
-automate parts of your workflow.
+For Windows Administrators, PowerShell is a great tool to perform
+various administrative tasks.  We have introduced a few PowerShell
+cmdlets on top of Okta APIs to help with administration on any Okta
+orgs.  The demo will go through a few of the examples.
+
+The PowerShell cmdlets can be found on <https://developer.okta.com>.
+It is offered as open source.  While we will continue to add more to
+the repo, we welcome any additions and contributions from PowerShell
+experts who would like to contribute.
 
 ## Getting started
 

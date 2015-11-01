@@ -24,8 +24,8 @@ that session.
 -   <a href="session-1-internal-use-cases/using-powershell.md">Using PowerShell with Okta</a>
 -   <a href="session-1-internal-use-cases/using-python-to-run-reports-from-okta.ipynb">Using Python to run reports from Okta</a>
 -   <a href="session-1-internal-use-cases/aws-cli.md">Using the AWS CLI with Okta</a>
--   Splunk setup for SIEM
--   ServiceNow
+-   <a href="session-1-internal-use-cases/splunk-app-for-okta.md">Splunk App for Okta</a>
+-   <a href="session-1-internal-use-cases/servicenow.md">ServiceNow</a>
 
 ## Afternoon Session - External Use Cases
 
@@ -37,8 +37,45 @@ that session.
     
     -   Installing Flask and PyJWT
     -   Installing "Python Tools for Visual Studio"
--   Build simple login page
--   Show SSO into SAML-enabled application post-login
--   Add social auth to login page
--   Login Gotchas
--   Introducing Login Widget
+-   <a href="session-2-external-use-cases/built-a-simple-login-page.md">
+    Building a simple login page
+    </a>
+    
+    Starting from scratch, we’ll build a simple Login Page using the
+    Okta API in Python.
+
+-   <a href="session-2-external-use-cases/adding-social-login-to-the-login-page.md">
+    Adding Social Login to the login page</a>
+    
+    Building on the previous exercise, we’ll add Social Login support
+    to your page.  If you think about B2C use cases, this is almost a
+    pre-requisite today to allow registration and authentication –
+    using Social Identity Providers like Facebook and Linkedin.
+    
+    Our Social Identity Provider offering also introduces webhooks for
+    the first time.  It is not part of the lab – but we will discuss
+    how webhooks are used in the context of our social
+    authentication/registration flow.
+
+-   <a href="session-2-external-use-cases/adding-sso-support.md">
+    Adding SSO support - SAML into an Okta managed application
+    </a>
+    
+    This exercise will leverage your earlier AWS IAM setup to show how
+    you can SSO directly into an app in a branded end user flow
+    leveraging our APIs.  It will also look into SAML specifics
+    including IDP and SP initiated logins and `RelayState`.
+
+-   <a href="session-2-external-use-cases/login-gotchas.md">
+    Login Gotchas</a>
+    
+    This portion will focus on common topics/issues that developers
+    often run into from a login perspective.
+
+-   <a href="session-2-external-use-cases/introducing-the-okta-signin-widget.md">
+    Introducing the Okta Sign-In Widget</a>
+    
+    You will get a sneak peek of our new Okta Sign-In Widget.  All the
+    work that you’ve done today – condensed into a Java-script based
+    implementation.  The widget supports credentials validation,
+    password management, MFA, Social Auth – and much more.
