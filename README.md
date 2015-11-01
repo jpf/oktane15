@@ -21,9 +21,9 @@ that session.
 
 ## Morning Session - Internal Use Cases
 
--   <a href="using-powershell.md">Using PowerShell with Okta</a>
--   <a href="using-python-to-run-reports-from-okta.ipynb">Using Python to run reports from Okta</a>
--   <a href="aws-cli.md">Using the AWS CLI with Okta</a>
+-   <a href="session-1-internal-use-cases/using-powershell.md">Using PowerShell with Okta</a>
+-   <a href="session-1-internal-use-cases/using-python-to-run-reports-from-okta.ipynb">Using Python to run reports from Okta</a>
+-   <a href="session-1-internal-use-cases/aws-cli.md">Using the AWS CLI with Okta</a>
 -   Splunk setup for SIEM
 -   ServiceNow
 
