@@ -51,7 +51,6 @@ that session.
     you can SSO directly into an app in a branded end user flow
     leveraging our APIs.  It will also look into SAML specifics
     including IDP and SP initiated logins and `RelayState`.
-
 -   <a href="session-2-external-use-cases/adding-social-login-to-the-login-page.md">
     Adding Social Login to the login page</a>
     
@@ -65,7 +64,7 @@ that session.
     how webhooks are used in the context of our social
     authentication/registration flow.
 
--   <a href="session-2-external-use-cases/introducing-the-okta-signin-widget.md">
+-   <a href="session-2-external-use-cases/introducing-the-okta-sign-in-widget.md">
     Introducing the Okta Sign-In Widget</a>
     
     You will get a sneak peek of our new Okta Sign-In Widget.  All the
