@@ -37,12 +37,21 @@ that session.
     
     -   Installing Flask and PyJWT
     -   Installing "Python Tools for Visual Studio"
--   <a href="session-2-external-use-cases/built-a-simple-login-page.md">
+-   <a href="session-2-external-use-cases/build-a-simple-login-page.md">
     Building a simple login page
     </a>
     
     Starting from scratch, we’ll build a simple Login Page using the
     Okta API in Python.
+
+-   <a href="session-2-external-use-cases/adding-sso-support.md">
+    Adding SSO support - SAML into an Okta managed application
+    </a>
+    
+    This exercise will leverage your earlier AWS IAM setup to show how
+    you can SSO directly into an app in a branded end user flow
+    leveraging our APIs.  It will also look into SAML specifics
+    including IDP and SP initiated logins and `RelayState`.
 
 -   <a href="session-2-external-use-cases/adding-social-login-to-the-login-page.md">
     Adding Social Login to the login page</a>
@@ -56,15 +65,6 @@ that session.
     the first time.  It is not part of the lab – but we will discuss
     how webhooks are used in the context of our social
     authentication/registration flow.
-
--   <a href="session-2-external-use-cases/adding-sso-support.md">
-    Adding SSO support - SAML into an Okta managed application
-    </a>
-    
-    This exercise will leverage your earlier AWS IAM setup to show how
-    you can SSO directly into an app in a branded end user flow
-    leveraging our APIs.  It will also look into SAML specifics
-    including IDP and SP initiated logins and `RelayState`.
 
 -   <a href="session-2-external-use-cases/login-gotchas.md">
     Login Gotchas</a>
