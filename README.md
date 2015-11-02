@@ -35,7 +35,7 @@ that session.
     Python Flask application in Visual Studio and includes these
     steps:
     
-    -   Installing Flask and PyJWT
+    -   Installing Python dependencies
     -   Installing "Python Tools for Visual Studio"
 -   <a href="session-2-external-use-cases/build-a-simple-login-page.md">
     Building a simple login page
