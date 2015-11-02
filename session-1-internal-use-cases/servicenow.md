@@ -44,12 +44,12 @@ We will now test the query in a scripting env within ServiceNow
 - Click on that and you should see a script testing env with the title "Run script (JavaScript executed on server)"
 - Paste the following:
 
-    var sm = new sn_ws.RESTMessageV2("<your REST msg name>","get");
-    var response = sm.execute();
-    var responseBody = response.getBody();
-    gs.info(responseBody);
-    var obj = new global.JSON().decode(responseBody);
-    JSUtil.logObject(obj);
+        var sm = new sn_ws.RESTMessageV2("<your REST msg name>","get");
+        var response = sm.execute();
+        var responseBody = response.getBody();
+        gs.info(responseBody);
+        var obj = new global.JSON().decode(responseBody);
+        JSUtil.logObject(obj);
 
 - Replace <your REST msg name> appropriately.
 - Hit "Run Script"
