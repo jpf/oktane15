@@ -172,8 +172,8 @@ file.
     #    base_url = 'https://example.okta.com'
     #    api_key = '01Ab2cDE-fghIJ3KLmNoP-Qr4stu5VwXYZAbcDeFGH'
     # Don't forget to replace the contents of the variables with real values!
-    base_url = os.environ['OKTA_BASE_URL']
-    api_key = os.environ['OKTA_API_TOKEN']
+    base_url = 'https://example.okta.com'
+    api_key = '01Ab2cDE-fghIJ3KLmNoP-Qr4stu5VwXYZAbcDeFGH'
     
     sessionsClient = SessionsClient(base_url, api_key)
     
