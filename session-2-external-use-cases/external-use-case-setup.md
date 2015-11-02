@@ -1,9 +1,9 @@
 # Setup for the External Use Case session
 
-## Installing Flask and PyJWT
+## Installing Python dependencies
 
 -   Open a Command Prompt by clicking "Start", then typing `cmd`
--   In the Command Prompt, type `pip install flask pyjwt`
+-   In the Command Prompt, type `pip install flask flask-login pyjwt cryptography okta`
 
 ## Installing the "Python Tools for Visual Studio"
 
