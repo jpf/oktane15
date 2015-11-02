@@ -43,7 +43,6 @@ that session.
     
     Starting from scratch, we’ll build a simple Login Page using the
     Okta API in Python.
-
 -   <a href="session-2-external-use-cases/adding-sso-support.md">
     Adding SSO support - SAML into an Okta managed application
     </a>
@@ -65,12 +64,6 @@ that session.
     the first time.  It is not part of the lab – but we will discuss
     how webhooks are used in the context of our social
     authentication/registration flow.
-
--   <a href="session-2-external-use-cases/login-gotchas.md">
-    Login Gotchas</a>
-    
-    This portion will focus on common topics/issues that developers
-    often run into from a login perspective.
 
 -   <a href="session-2-external-use-cases/introducing-the-okta-signin-widget.md">
     Introducing the Okta Sign-In Widget</a>
