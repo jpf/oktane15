@@ -5,7 +5,7 @@
 Please note that this is a shared environment!
 
 - Go to [ServiceNow login page] (https://undefined.service-now.com)
-- Username: `oktademo`
+- Username: `oktanedemo`
 - Password: `Oktane123$`
 
 This lab exercise will take you through the following:
@@ -17,7 +17,7 @@ This lab exercise will take you through the following:
 
 ## Assume Security_Admin Role
 
-- click on the lock icon next to the username in top left corner.
+- Click on the lock icon next to the username in top left corner.
 - Select security_admin option and hit OK.
 
 ## Create REST Message
@@ -56,7 +56,7 @@ We will now test the query in a scripting env within ServiceNow
 
 ## Create a table for storing Group Results
 
-- Enter in the top left search field and look for "System Definition->Tables"
+- Enter "tables" in the top left search field and look for "System Definition->Tables"
 - Hit "New" to create a new table
 - Enter a unique name - TBD during lab.  You need to write down the name entered as this will be needed later.
 - Under "Columns" - insert 2 new rows.
