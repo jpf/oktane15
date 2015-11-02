@@ -26,7 +26,7 @@ HTML just below the `<button>` tag that says "Log in", it should
 look like this:
 
 **NOTE:** The contents of the `href` in the anchor tag ("`<a>`") will be the
-URL that you constructed in the "Setting up an Okta Social
+"Social Auth Login URL" that you constructed in the "Setting up an Okta Social
 Authentication provider" instructions above.
 
     <button type="submit" class="btn btn-default">Log In</button>
