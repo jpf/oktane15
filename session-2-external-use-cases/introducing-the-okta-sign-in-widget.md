@@ -9,26 +9,6 @@ password management, MFA, Social Auth – and much more.
 
 ## PythonApplication1.py
 
-Add the code below to the `PythonApplication1.py` file, before the
-line that looks like `sessionsClient = SessionsClient(base_url, api_key)`:
-
-    import jwt
-    import requests
-    import base64
-    from cryptography import x509
-    from cryptography.hazmat.backends import default_backend
-    jwks_url = "{}/oauth2/v1/keys".format(base_url)
-    r = requests.get(jwks_url)
-    jwks = r.json()
-    x5c = jwks['keys'][0]['x5c'][0]
-    pem_data = base64.b64decode(str(x5c))
-    cert = x509.load_der_x509_certificate(pem_data, default_backend())
-    
-    
-    client_id = 'AbcDE0fGHI1jk2LM34no'
-    ngrok_url = 'https://abc123def.ngrok.io'
-    public_key = cert.public_key()
-
 Add the method below:
 
     @app.route("/widget")

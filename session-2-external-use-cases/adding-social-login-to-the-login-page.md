@@ -36,21 +36,25 @@ Authentication provider" instructions above.
 
 ## Update PythonApplication1.py
 
-Lastly, add the code below to the top of the
-`PythonApplication1.py`, add these lines just above the line that
-reads `sessionsClient = SessionsClient(base_url, api_key)` 
+Lastly, add the code below to the `PythonApplication1.py` file, before the
+line that looks like `sessionsClient = SessionsClient(base_url, api_key)`:
 
+    import jwt
+    import requests
+    import base64
+    from cryptography import x509
+    from cryptography.hazmat.backends import default_backend
+    jwks_url = "{}/oauth2/v1/keys".format(base_url)
+    r = requests.get(jwks_url)
+    jwks = r.json()
+    x5c = jwks['keys'][0]['x5c'][0]
+    pem_data = base64.b64decode(str(x5c))
+    cert = x509.load_der_x509_certificate(pem_data, default_backend())
+    
+    
     client_id = 'AbcDE0fGHI1jk2LM34no'
-    public_key = """-----BEGIN PUBLIC KEY-----
-    ABCDEfGHIjklmnoP0q1RSTUVWXYZAB2CDEFGHiJKLMNO3pqRsTUvWxy4z5aBCdEF
-    GhijKLMN6OP7qRstuVWx8yZAbcdefGHIJklmnOPQrsT9uVWx0Yzab1C2DEF3gh+4
-    IJ5KL6mN7OP8qrsTuvwx9yzABCdEfgh0ij1KL2mn3oPQR4s5T+UVWXy67z89Abcd
-    0EFG+hiJklmno1PqRS$TuvWxyZA2BC+deFghIjKLm345NopQrStU6vwXYZAb7cde
-    &FgHI+8j9KlMnOpQrsTUVWXyz0AbcdeFGh1IJklmnopqrS2Tu3vWx456Yzab78c9
-    dEFGHIJ0KLmnOPQRStu1vwxyZ2AB3cDeF4GHiJkl5MnOP6qRST7uVwxyZA8bc9d0
-    efGHIJKL
-    -----END PUBLIC KEY-----
-    """
+    ngrok_url = 'https://abc123def.ngrok.io'
+    public_key = cert.public_key()
 
 Add this method to your `PythonApplication1.py` file, place it just
 above the line that reads `@app.route("/secret")`
