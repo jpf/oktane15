@@ -20,12 +20,13 @@ login experience to your web application:
     <body>
       <div id="okta-login-container"></div>
       <script type="text/javascript">
-        var oktaSignIn = new OktaSignIn({baseUrl: 'https://example.okta.com'});
+        var baseUrl = 'https://example.okta.com';
+        var oktaSignIn = new OktaSignIn({baseUrl: baseUrl});
     
         oktaSignIn.renderEl(
           { el: '#okta-login-container' },
           function (res) {
-            if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://example.com/'); }
+            if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://example.okta.com'); }
           }
         );
       </script>
@@ -53,7 +54,8 @@ ready.
 The line below initializes the the Okta Sign-In Widget object, note that
 the `baseUrl` value **MUST** be the equivalent for your Okta organization.
 
-    var oktaSignIn = new OktaSignIn({baseUrl: 'https://example.okta.com'});
+    var baseUrl = 'https://example.okta.com';
+    var oktaSignIn = new OktaSignIn({baseUrl: baseUrl});
 
 The lines below actually render the the Okta Sign-In Widget widget. Note
 that the value for `el` can be whatever `id` that you specify, also
@@ -64,7 +66,7 @@ you will likely also want to define an "error" callback as well.
     oktaSignIn.renderEl(
       { el: '#okta-login-container' },
       function (res) {
-        if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://example.com/'); }
+        if (res.status === 'SUCCESS') { res.session.setCookieAndRedirect('https://example.okta.com/'); }
       }
     );
 
@@ -178,14 +180,15 @@ Copy this to a file named `login-to-okta.html` :
     
       <!-- Script to init the widget -->
       <script>
-        var oktaSignIn = new OktaSignIn({baseUrl: 'https://example.okta.com'});
+        var baseUrl = 'https://example.okta.com';
+        var oktaSignIn = new OktaSignIn({baseUrl: baseUrl});
     
         oktaSignIn.renderEl(
           { el: '#okta-login-container' },
           function (res) {
             if (res.status === 'SUCCESS') {
               console.log('User %s succesfully authenticated %o', res.user.profile.login, res.user);
-              res.session.setCookieAndRedirect('https://example.com/');
+              res.session.setCookieAndRedirect('https://example.okta.com/');
             }
           }
         );
@@ -339,7 +342,7 @@ the `login-to-okta.html` file that you created above.
 
     <style>
       body {
-        background-image: url('https://farm9.staticflickr.com/8332/8451032652_b2bf0bdadc_h.jpg');
+        background-image: url('http://2.bp.blogspot.com/-NYZC_4bJT_s/Tw_0yhJ8yQI/AAAAAAAACbg/81Jxffwgh8o/s1600/1.jpg');
         background-repeat: no-repeat;
         background-position: center center fixed;
         -webkit-background-size: cover;
@@ -379,7 +382,7 @@ see what these customizations do by copying this code into your
 web browser. A full list of the supported customization options
 are below.
 
-    return new OktaSignIn({
+    var oktaSignIn = new OktaSignIn({
       baseUrl: baseUrl,
       logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Oldacmelogo.png/200px-Oldacmelogo.png',
     
